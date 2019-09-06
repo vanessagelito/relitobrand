@@ -1,13 +1,12 @@
 .mommy {
   display: grid;
-  max-width: 1000px;
+  max-width: 100%;
   position: relative;
   margin: auto;
   grid-gap: 10px;
-  grid-template-areas: "header header"
-   "left right" "footer footer";
-  grid-template-columns: 200px 700px;
-  grid-template-rows: 100px 1000px 100px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "header header header"
+   "left right right"
   border: 1px solid black;
     
 }
